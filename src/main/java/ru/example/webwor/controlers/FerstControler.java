@@ -9,15 +9,16 @@ import java.time.LocalDate;
 public class FerstControler {
 
     @GetMapping
-    public String applicationIsRunning(){
+    public String applicationIsRunning() {
         return "Приложение запущено";
     }
+
     @GetMapping("/info")
-    public String info(String name, String  nameProject, LocalDate dateProject,String descriptionProject){
+    public String info(String name, String nameProject, LocalDate dateProject, String descriptionProject) {
         name = "Юрий";
         nameProject = "Вебразработка";
         dateProject = LocalDate.now();
         descriptionProject = "Вебразработка";
-        return "Приложение запущено" + "/" + name +"/" +nameProject+ "/" +dateProject+ "/" + descriptionProject;
+        return "Приложение запущено" + "/" + name + "/" + nameProject + "/" + dateProject + "/" + descriptionProject;
     }
 }
