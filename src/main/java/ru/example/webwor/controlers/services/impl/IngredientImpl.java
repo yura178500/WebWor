@@ -1,8 +1,10 @@
-package ru.example.webwor.controlers.services;
+package ru.example.webwor.controlers.services.impl;
+
+import ru.example.webwor.controlers.services.Ingredient;
 
 public class IngredientImpl implements Ingredient {
 
-    public String getName() {
+    public String getNameIngredient() {
         return null;
     }
 

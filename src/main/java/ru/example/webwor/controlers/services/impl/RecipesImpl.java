@@ -1,8 +1,8 @@
 package ru.example.webwor.controlers.services.impl;
 
-import ru.example.webwor.controlers.services.Recipes;
+import ru.example.webwor.controlers.services.RecipesService;
 
-public class RecipesImpl implements Recipes {
+public abstract class RecipesImpl implements RecipesService {
 
    
     public String getName() {
@@ -23,4 +23,5 @@ public class RecipesImpl implements Recipes {
     public String getCookingSteps() {
         return null;
     }
+
 }
