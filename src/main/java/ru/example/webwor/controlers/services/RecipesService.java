@@ -10,10 +10,10 @@ public interface RecipesService {
     String getCookingSteps();
 
         Map<Long, RecipesService> recipes = new HashMap<>();
-        Long RecipesId = 1L;
+        Long getRecipesId = 1L;
 
         public static RecipesService createRecipes(RecipesService recipes) {
-            recipes.put(RecipesId, recipes);
+            recipes.put(getRecipesId, recipes);
 
             return recipes;
         }

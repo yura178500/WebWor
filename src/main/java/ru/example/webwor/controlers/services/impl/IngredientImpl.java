@@ -17,4 +17,9 @@ public class IngredientImpl implements Ingredient {
     public String getUnit() {
         return null;
     }
+
+    @Override
+    public Long getIdIngredient() {
+        return null;
+    }
 }
