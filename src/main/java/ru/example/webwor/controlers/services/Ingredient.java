@@ -27,12 +27,11 @@ public interface Ingredient {
         public Ingredient getIngredientById(Long ingredientId) {
             return ingredientMap.get(ingredientId);
         }
-
         public Ingredient updateIngredient(Long ingredientId, Ingredient ingredient) {
             ingredientMap.put(ingredientId, ingredient);
+
             return ingredient;
         }
-
 
         public Ingredient deleteIngredient(Long ingredientId) {
             return ingredientMap.remove(ingredientId);

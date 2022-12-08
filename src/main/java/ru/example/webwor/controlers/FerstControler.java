@@ -15,6 +15,7 @@ public class FerstControler {
         return "Приложение запущено";
    }
 
+
    @GetMapping("/info")
    public String info(String name, String nameProject, LocalDate dateProject, String descriptionProject) {
        name = "Юрий";

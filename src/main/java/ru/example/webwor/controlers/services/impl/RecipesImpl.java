@@ -4,16 +4,12 @@ import ru.example.webwor.controlers.services.RecipesService;
 
 public abstract class RecipesImpl implements RecipesService {
 
-   
-    public String getName() {
+       public String getName() {
         return null;
     }
-
-
     public int getCookingTime() {
         return 0;
     }
-
 
     public String getIngredients() {
         return null;

@@ -7,12 +7,12 @@ import ru.example.webwor.controlers.services.Ingredient;
 @RequestMapping("ingredien")
 @RestController
 class IngredienController {
-    private final Ingredient.IngredientService ingredientService;
+    private Ingredient.IngredientService ingredientService;
 
     public IngredienController(Ingredient.IngredientService ingredientService) {
         this.ingredientService = ingredientService;
-    }
 
+    }
     @PostMapping
     public ResponseEntity createIngredien(@RequestBody Ingredient ingredient) {
         Ingredient createIngredien = ingredientService.createIngredient(ingredient);
@@ -22,7 +22,7 @@ class IngredienController {
     @GetMapping("{ingredienId}")
     public ResponseEntity getIngredien(@PathVariable Long ingredientId) {
         Ingredient ingredient = ingredientService.getIngredientById(ingredientId);
-        if(ingredient == null) {
+        if (ingredient == null) {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(ingredient);
@@ -33,6 +33,7 @@ class IngredienController {
         Ingredient updatedIngredient = ingredientService.updateIngredient(ingredient.getIdIngredient(), ingredient);
         return ResponseEntity.ok(updatedIngredient);
     }
+
     @GetMapping("/api/ingredient/{id}/{name}")
     @ResponseBody
     public String IngredienController(@PathVariable String idIngredient, @PathVariable String nameIngredien) {

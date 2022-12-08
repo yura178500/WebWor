@@ -18,7 +18,6 @@ class RecipesController {
         RecipesService createdRecipes = RecipesService.createRecipes(recipes);
         return ResponseEntity.ok(createdRecipes);
     }
-
     @GetMapping("{recipesId}")
     public ResponseEntity getRecipes(@PathVariable Long recipesId) {
         RecipesService recipes = RecipesService.getRecipesId(recipesId);

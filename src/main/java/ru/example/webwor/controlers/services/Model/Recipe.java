@@ -10,7 +10,6 @@ public class Recipe {
     public int getCookingTime() {
         return cookingTime;
     }
-
     public void setCookingTime(int cookingTime) {
         this.cookingTime = cookingTime;
     }
@@ -18,7 +17,6 @@ public class Recipe {
     public String getIngredients() {
         return ingredients;
     }
-
     public void setIngredients(String ingredients) {
         this.ingredients = ingredients;
     }

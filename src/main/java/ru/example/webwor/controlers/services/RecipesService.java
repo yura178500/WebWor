@@ -11,7 +11,6 @@ public interface RecipesService {
 
         Map<Long, RecipesService> recipes = new HashMap<>();
         Long getRecipesId = 1L;
-
         public static RecipesService createRecipes(RecipesService recipes) {
             recipes.put(getRecipesId, recipes);
 

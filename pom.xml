@@ -10,6 +10,7 @@
     </parent>
     <groupId>ru.example</groupId>
     <artifactId>WebWor</artifactId>
+
     <version>0.0.1-SNAPSHOT</version>
 
     <name>WebWor</name>

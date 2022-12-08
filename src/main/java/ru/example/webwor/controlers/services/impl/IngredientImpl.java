@@ -12,8 +12,6 @@ public class IngredientImpl implements Ingredient {
     public int getNumberIngredients() {
         return 0;
     }
-
-
     public String getUnit() {
         return null;
     }

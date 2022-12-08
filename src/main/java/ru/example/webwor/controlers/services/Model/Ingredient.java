@@ -5,7 +5,6 @@ public class Ingredient {
     int numberIngredients;
     String unit;
     Long idIngredient;
-
     public String getNameIngredient() {
         return nameIngredient;
     }
